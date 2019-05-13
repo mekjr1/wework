@@ -11,7 +11,8 @@
     "test": "echo \"Error:  no test specified\" && exit 1",
     "lint": "eslint .",
     "pretest": "npm run lint --silent",
-    "start": "meteor run"
+    "heroku-prebuild": "cd bundle/programs/server && npm install -q",
+    "start": "cd bundle && node main.js"
   },
   "repository": {
     "type": "git",
