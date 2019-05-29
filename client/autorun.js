@@ -1,3 +1,4 @@
+
 Tracker.autorun(function() {
   var current = Router.current();
 

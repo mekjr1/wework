@@ -1,5 +1,5 @@
 Profiles = new Mongo.Collection("experts"); //todo - rename underlying collection to reflect code refactor
-
+//Meteor.startup(function() {
 Profiles.attachSchema(
   new SimpleSchema({
     userId: {
@@ -19,7 +19,7 @@ Profiles.attachSchema(
     },
     userName: {
       type: String,
-      label: "User Name",
+      label: TAPi18n.__("l_username"),
       autoValue: function() {
         if (this.isInsert) {
           return getUserName(Meteor.user());
@@ -30,7 +30,12 @@ Profiles.attachSchema(
         } else {
           this.unset();
         }
-      }
+      },
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_username")
+                }
+            }
     },
     customImageUrl: {
       type: String,
@@ -38,30 +43,50 @@ Profiles.attachSchema(
     },
     name: {
       type: String,
-      label: "Name",
-      max: 128
+      label: TAPi18n.__("l_name"),
+      max: 128,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_name")
+                }
+            }
     },
     type: {
       type: String,
-      label: "Individual or Company",
-      allowedValues: ["Individual", "Company"]
+      label: TAPi18n.__("l_type"),
+      allowedValues: [TAPi18n.__("opt_type_individual"), TAPi18n.__("opt_type_company")],
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_type")
+                }
+            }
     },
     title: {
       type: String,
-      label: "Title",
-      max: 128
+      label: TAPi18n.__("l_title"),
+      max: 128,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_title")
+                }
+            }
     },
     location: {
       type: String,
-      label: "Location",
-      max: 256
+      label: TAPi18n.__("l_location"),
+      max: 256,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_location")
+                }
+            }
     },
     description: {
       type: String,
-      label: "Description",
+      label: TAPi18n.__("l_description"),
       max: 10000,
       autoform: {
-        afFieldInput: SUMMERNOTE_OPTIONS
+        afFieldInput: SUMMERNOTE_OPTIONS,
       }
     },
     // Automatically set HTML content based on markdown content
@@ -78,55 +103,85 @@ Profiles.attachSchema(
     },
     availableForHire: {
       type: Boolean,
-      label: "Currently Available For Hire",
+      label: TAPi18n.__("l_availability"),
       defaultValue: false
     },
     interestedIn: {
       type: [String],
-      label: "Interested In",
+      label: TAPi18n.__("l_interested"),
       allowedValues: JOB_TYPES,
       optional: true
     },
     contact: {
       type: String,
-      label: "Contact Info",
+      label: TAPi18n.__("l_contact"),
       max: 1024,
-      optional: true
+      optional: true,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_contact")
+                }
+            }
     },
     url: {
       type: String,
-      label: "Personal URL",
+      label: TAPi18n.__("l_personalurl"),
       max: 1024,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_personalurl")
+                }
+            }
     },
     resumeUrl: {
       type: String,
-      label: "Resume URL",
+      label: TAPi18n.__("l_resumeurl"),
       max: 1024,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_resumeurl")
+                }
+            }
     },
     githubUrl: {
       type: String,
-      label: "GitHub URL",
+      label: TAPi18n.__("l_githuburl"),
       max: 1024,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_githuburl")
+                }
+            }
     },
     linkedinUrl: {
       type: String,
-      label: "LinkedIn URL",
+      label: TAPi18n.__("l_linkedinurl"),
       max: 1024,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_linkedinurl")
+                }
+            }
     },
     stackoverflowUrl: {
       type: String,
-      label: "Stackoverflow URL",
+      label: TAPi18n.__("p_stackoverflowurl"),
       max: 1024,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("l_stackoverflowurl")
+                }
+            }
     },
     randomSorter: {
       type: Number,

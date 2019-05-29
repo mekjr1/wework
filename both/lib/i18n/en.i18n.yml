@@ -1,0 +1,162 @@
+#header.html
+brand: Get Tech Jobs
+login: Log In  
+register: Sign Up
+myjobposts: My Posted Jobs
+admin: Admin
+candidateprofile: Developer Profile
+userprofile: User Profile
+logout: Sign Out
+
+#home.html
+tagline: The premier job board and developer community space specifically for Techs
+browse: Browse the
+jobcounts: active job postings
+or: or
+createprofile: Create your profile
+tojoin: to join the
+registered: registered tech minds
+postjob: Post A Job
+createprof: Create a Profile
+update: Update
+cancel: Cancel
+yourprof: Your User Profile
+hireme: Hire Me
+company: Company
+interestedin: Interested in
+viewresume: View Resume
+createdon: Created on
+delete: Delete
+save: Save
+editeprofile: Edit Your Profile
+
+#footer.html
+candidates: Candidates
+jobs: Jobs 
+disclaimer: Made By 
+
+#profileForms.html
+
+#loading.html
+loading: Loading....
+
+#notfound.html
+notfound: Oops, we couldn't find the item that belongs to this url.
+notfoundtip: It may have been deleted by the owner or removed by admins.
+
+#job.html
+postedon: Posted on
+featureduntil: Featured Until
+deactivate: Deactivate
+
+#jobDeativate.html
+deactivatequestion: Why do you want to deactivate?
+positionfilled: Position Filled
+otherreasons: Other Reasons
+
+
+#jobsForms.html
+jobsalert: This platform is only for Tech Jobs
+jobsarefree: Jobs are free to post.
+jobpostdurationdisclaimer: Your job post will remain on this site for 90 days.  After 90 days the post will no longer appear to visitors.
+youcanbuyfeatured: You can have your job post featured on the home page for 30 days for $100 buy purchasing the upgrade after creating your post.
+previewjobpost: Continue to preview your post
+jobposteditalert: Only pending jobs can be edited.
+backtojobpost: Back to post
+selectjobtype: Select a Job Type
+jobcompanyname: Name of the hiring company
+joblocation: Where is this job located?
+jobdescription: Tell prospective developers about this position. What is the project? What will you expect them to know beforehand? Things like that.
+externalurl: External URL of job posting
+
+#jobsincludes.html
+currentstatus: Current Status is %s
+setstatus: Set status to
+jobedit: Edit Job
+jobpendingmessage: This post is awaiting admin approval. It will be reviewed shortly and then become live on the site.
+jobflaggedmessage: This post has been flagged for content. Contact an admin if you believe this is in error.
+jobdeactivatedmessage: This job post has been deactivated.
+jobfilledmessage: This job post has been filled.
+jobupgrademessage: Upgrade to a Featured Job Post
+guaranteedmessage: Guaranteed to stay on home page
+highlightjobmessage: Highlighted job listing display
+priorityjobmessage: Priority placement in jobs listing
+buyupgrade: Buy 30 Days for $100
+
+#jobsRecent.html
+recentjobs: Recent Jobs
+lastjobpost: Last post about
+viewall: View All
+
+#myjobs.html
+nojobpostedmessage: You haven't posted any jobs.
+ifyouhaveanoffer: if you have one to offer
+
+#profiles.html
+viewalloption: Companies &amp; Individuals
+viewcompanysonly: Companies Only
+viewindividualsonly: Individuals Only
+search: Search
+nomatchingprofiles: Sorry no matching profiles found.
+
+#profilesRecente.html
+featuredprofiles: Featured Developers
+
+
+#forms placeholders and labels
+
+l_username: Username
+p_username: Username
+p_name: Name
+l_name: Enter your name
+p_type: Choose Type
+l_type: Individual or Company
+p_title: Your title
+l_title: Insert your Title
+l_description: know\
+l_availability: Currently Available For Hire
+l_interested: Interested In
+l_contact: Contact Info
+p_contact: email/twitter/whatever for you to be contacted at (your user account email address is not displayed)
+l_personalurl: Personal URL
+p_personalurl: https://www.abdulmeque.com
+l_githuburl: GitHub URL
+p_githuburl: https://github.com/yourid
+l_linkedinurl: LinkedIn s
+p_linkedinurl: https://www.linkedin/in/yourid
+p_resumeurl: URL of resume/cv hosted externally (dropbox, gdrive, etc) 
+l_resumeurl: Resume URL
+p_stackoverflowurl: StackOverflow
+l_stackoverflowurl: Your stackoverflow public profile
+l_fname: Full Name
+p_fname: Abdul Meque
+p_email: abdul@nmtss.net
+l_email: E-Mail Address
+l_jdescription: Job Description
+p_jtitle: Job Title
+l_jtitle: Job Title for this post
+l_company: Company
+p_company: Name of the Company
+l_location: Location 
+p_location: Location of the position
+l_url: URL 
+p_url: External URL for application
+l_contactinfo: Contact Info
+p_contactinfo: email/twitter/whatever for you to be contacted at (your user account email address is not displayed)
+l_remote: This is a remote position.
+l_userid: User Id 
+l_jobtype: Job Type
+
+opt_type_individual: Individual
+opt_type_company: Company
+
+#Job Types 
+jt_full: Full Time 
+jt_ptime: Part Time 
+jt_hour: Hourly Contract
+jt_term: Term Contract
+jt_mentoring: Mentoring
+jt_intern: Internship
+jt_bounty: Bounty 
+jt_volunteer: Volunteer 
+jt_other: Other

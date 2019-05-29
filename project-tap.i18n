@@ -1,0 +1,8 @@
+
+{
+    "helper_name": "_",
+    "supported_languages": ["en","pt"],
+    "i18n_files_route": "/tap-i18n",
+    "cdn_path": null,
+    "preloaded_langs": []
+}

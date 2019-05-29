@@ -1,48 +1,76 @@
 Jobs = new Mongo.Collection("jobs");
 
-Jobs.attachSchema(
-  new SimpleSchema({
+
+ Schemaj= new SimpleSchema({
     title: {
       type: String,
-      label: "Job Title",
-      max: 128
+      label: TAPi18n.__("l_jtitle"),
+      max: 128,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_jtitle")
+                }
+            }
     },
     company: {
       type: String,
-      label: "Company",
+      label: TAPi18n.__("l_company"),
       max: 128,
-      optional: true
+      optional: true,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_company")
+                }
+            }
     },
     location: {
       type: String,
       label: "Location",
+      label: TAPi18n.__("l_location"),
       max: 128,
-      optional: true
+      optional: true,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("l_location")
+                }
+            }
     },
     url: {
       type: String,
       label: "URL",
+      label: TAPi18n.__("l_url"),
       max: 256,
       optional: true,
-      regEx: SimpleSchema.RegEx.Url
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_url")
+                }
+            }
     },
     contact: {
       type: String,
       label: "Contact Info",
-      max: 128
+      label: TAPi18n.__("l_contactinfo"),
+      max: 128,
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_contactinfo")
+                }
+            }
     },
     jobtype: {
       type: String,
-      label: "Job Type",
+      label: TAPi18n.__("l_jobtype"),
       allowedValues: JOB_TYPES
     },
     remote: {
       type: Boolean,
-      label: "This is a remote position."
+      label: TAPi18n.__("l_remote")
     },
     userId: {
       type: String,
-      label: "User Id",
+      label: TAPi18n.__("l_userid"),
       autoValue: function() {
         if (this.isInsert) {
           return Meteor.userId();
@@ -54,11 +82,16 @@ Jobs.attachSchema(
           this.unset();
         }
       },
+      autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_userid")
+                }
+            },
       denyUpdate: true
     },
     userName: {
       type: String,
-      label: "User Name",
+      label: TAPi18n.__("l_username"),
       autoValue: function() {
         if (this.isInsert) {
           return getUserName(Meteor.user());
@@ -69,11 +102,12 @@ Jobs.attachSchema(
         } else {
           this.unset();
         }
-      }
+      },
+      
     },
     description: {
       type: String,
-      label: "Job Description",
+      label: TAPi18n.__("l_jdescription"),
       max: 20000,
       autoform: {
         afFieldInput: SUMMERNOTE_OPTIONS
@@ -141,9 +175,11 @@ Jobs.attachSchema(
       denyInsert: true,
       optional: true
     }
-  })
-);
-
+  });
+//Jobs.attachSchema(Schemaj);
+if(Meteor.isClient){
+  Jobs.attachSchema(Schemaj);
+}
 Jobs.helpers({
   path: function() {
     return 'jobs/' + this._id + '/' + this.slug();

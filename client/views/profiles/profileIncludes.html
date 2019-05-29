@@ -1,16 +1,19 @@
 <template name="profileStatusToggle">
     <div class="row">
         <div class="col-sm-12">
-            Current Status is <b>{{status}}</b> - Set status to {{#each statuses}} {{#unless $eq ../status this}}
-            <button type="button" class="set-status">{{this}}</button>
-            {{/unless}} {{/each}}
+            {{_"currentstatus" }} <b>{{status}}</b> - {{_"setstatus"}}
+            {{#each statuses}}
+                {{#unless $eq ../status this}}
+                    <button type="button" class="set-status">{{this}}</button>
+                {{/unless}}
+            {{/each}}
             <hr>
         </div>
     </div>
 </template>
 <template name="profileAdminEditLink">
     <div class="pull-right">
-        <a href="/admin/Profiles/{{_id}}/edit">Edit Profile</a>
+        <a href="/admin/Profiles/{{_id}}/edit">{{_"editeprofile"}}</a>
     </div>
 </template>
 <template name="profileStatusAlert">

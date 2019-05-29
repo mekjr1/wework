@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error:  no test specified\" && exit 1",
     "lint": "eslint .",
-    "pretest": "npm run lint --silent",
+    "pretest": "npm run lint",
     "heroku-prebuild": "cd bundle/programs/server && npm install -q",
     "start": "cd bundle && node main.js"
   },
@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/nate-strauser/wework#readme",
   "dependencies": {
-    "@babel/runtime": "^7.3.4",
+    "@babel/runtime": "^7.4.4",
     "babel-runtime": "^6.26.0",
-    "bcrypt": "^1.0.3"
+    "bcrypt": "^1.0.3",
+    "cordova": "^9.0.0"
   }
 }

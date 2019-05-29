@@ -21,10 +21,10 @@
 
 							{{#if availableForHire}}
 								<br>
-								<span class="label label-primary"><i class="fa fa-rocket"></i> Hire Me</span>
+								<span class="label label-primary"><i class="fa fa-rocket"></i> {{_"hireme"}}</span>
 							{{/if}}
 							{{#if $eq type 'Company'}}
-								<span class="label label-danger"><i class="fa fa-users"></i> Company</span>
+								<span class="label label-danger"><i class="fa fa-users"></i> {{_"company"}}</span>
 							{{/if}}
 							<hr>
 							<small>
@@ -33,7 +33,7 @@
 								{{/if}}
 								{{#if interestedIn}}
 									<hr>
-									<b>Interested In</b>
+									<b>{{_"interestedin"}}</b>
 									{{#each interestedIn}}
 										<br>
 										{{this}}
@@ -49,7 +49,7 @@
 								{{/if}}
 								{{#if resumeUrl}}
 									<br>
-									<i class="fa fa-file-text"></i>&nbsp;&nbsp;<a href="{{resumeUrl}}" target="_blank" rel="noopener">View Resume</a>
+									<i class="fa fa-file-text"></i>&nbsp;&nbsp;<a href="{{resumeUrl}}" target="_blank" rel="noopener">{{_"viewresume"}}</a>
 								{{/if}}
 								{{#if githubUrl}}
 									<br>
@@ -65,7 +65,7 @@
 								{{/if}}
 							</small>
 							<hr>
-							<i class="fa fa-calendar"></i> Created on {{formatDate createdAt}}
+							<i class="fa fa-calendar"></i> {{_createdon}} {{formatDate createdAt}}
 						</div>
 						<div class="col-sm-9">
 							<div class="row">
@@ -101,7 +101,7 @@
 								</div>
 								<div class="pull-right">
 									{{#quickRemoveButton collection="Profiles" _id=_id class="btn btn-danger" beforeRemove=beforeRemove}}
-										<i class="fa fa-trash-o"></i> Delete
+										<i class="fa fa-trash-o"></i> {{_delete}}
 									{{/quickRemoveButton}}
 								</div>
 							{{/if}}

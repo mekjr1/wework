@@ -46,10 +46,10 @@
 								<i class="fa fa-envelope fa-fw"></i> {{contact}}
 								<hr>
 							{{/if}}
-							<i class="fa fa-calendar fa-fw"></i> Posted on {{formatDate createdAt}}
+							<i class="fa fa-calendar fa-fw"></i> {{_"postedon"}}{{formatDate createdAt}}
 							{{#if featured}}
 							<hr>
-							<i class="fa fa-trophy fa-fw"></i> Featured Until {{formatDate featuredThrough}}
+							<i class="fa fa-trophy fa-fw"></i> {{_"featureduntil"}} {{formatDate featuredThrough}}
 							{{/if}}
 						</div>
 						<div class="col-sm-9">
@@ -64,13 +64,13 @@
 								{{!-- {{#if $eq status "pending"}} --}}
 									<div class="pull-right">
 										&nbsp;
-										<a href="{{pathFor 'jobEdit'}}" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</a>
+										<a href="{{pathFor 'jobEdit'}}" class="btn btn-primary"><i class="fa fa-pencil"></i> {{_"edit"}}</a>
 									</div>
 								{{!-- {{/if}} --}}
 								{{#if $eq status "active"}}
 									<div class="pull-right">
 										<a id="job-deactivate" class="btn btn-danger">
-											<i class="fa fa-times"></i> Deactivate
+											<i class="fa fa-times"></i> {{_"deactivate"}}
 										</a>
 									</div>
 								{{/if}}

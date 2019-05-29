@@ -1,0 +1,162 @@
+# header.html
+brand: Encontre trabalhos em IT
+login: Login
+registrar: Registrar
+myjobposts: Minhas vagas publicadas
+admin: Admin
+candidateprofile: Perfil de Developer
+userprofile: Perfil de Usuário
+logout: Sair
+
+# home.html
+tagline: O principal espaço para a equipe de trabalho e a comunidade de desenvolvedores especificamente para Techs
+browse: Navegue pelo
+jobcounts: Empregos disponiveis
+or: ou
+createprofile: Crie seu Perfil
+tojoin: para se juntar ao
+registrado: mentes de tecnologia registradas
+postjob: Postar um emprego
+createprof: Criar um Perfil
+update: Atualizar
+cancel: Cancelar
+yourprof: Seu Perfil de Usuário
+hireme: Contrate-me
+company: Empresa
+interestedin em: Interessado em
+viewresume: Ver CV
+createdon: Criado em
+delete: Excluir
+save: Salvar
+editeprofile: Edite seu Perfil
+
+# footer.html
+candidates: Candidatos
+jobs: Vagas
+disclaimer: Desenvolvido por 
+
+# profileForms.html
+
+# loading.html
+loading: Carregando ....
+
+# notfound.html
+notfound: Ops, não conseguimos encontrar o item que pertence a este URL.
+notfoundtip: pode ter sido excluído pelo proprietário ou removido pelos administradores.
+
+# job.html
+Postado em: Publicado em
+featureduntil: Em Destaque até
+desativar: Desativar
+
+# jobDeativate.html
+deactivatequestion: Por que você deseja desativar?
+positionfilled: Posição preenchida
+otherreasons: Outras razões
+
+
+# jobsForms.html
+jobsalert: Somemente para empregos Tech
+jobsarefree: Publicar vaga e gratuito.
+jobpostdurationdisclaimer: Sua vaga publicada permanecerá neste site por 90 dias. Após 90 dias, a publicação não será mais exibida para os visitantes.
+youcanbuyfeatured: Você pode ter sua publicação de emprego em destaque na página inicial por 30 dias, por US $ 100, comprando a atualização depois de criar sua publicação.
+previewjobpost: Continue para Pré-visualizar 
+jobposteditalert: Somente publicaçoes pendentes podem ser editados.
+backtojobpost: Voltar para a publicação
+selectjobtype: Selecione um tipo de vaga
+jobcompanyname: Nome da empresa contratante
+joblocation: Onde este trabalho está localizado?
+jobdescription: informe os IT/desenvolvedores em potencial sobre essa posição. Qual é o projeto? O que você espera que eles saibam de antemão? Coisas assim.
+externalurl: URL externa do anúncio de emprego
+
+# jobsincludes.html
+currentstatus: O status atual é %s
+setstatus: Definir status para
+jobedit: Editar vaga
+jobpendingmessage: esta postagem está aguardando aprovação do administrador. Ele será revisado em breve e depois será publicado no site.
+jobflaggedmessage: Esta postagem foi sinalizada por causa do conteúdo. Entre em contato com um administrador se você acredita que isso é um erro.
+jobdeactivatedmessage: Esta postagem de trabalho foi desativada.
+jobfilledmessage: Esta postagem de emprego foi preenchida.
+jobupgrademessage: Colocar a vaga em destaque
+GarantidaMessage: Garantido que ficara na pagina inicial
+highlightjobmessage: Exibição de listagem de vaga em Destaque
+priorityjobmessage: Posicionamento prioritário na listagem de empregos
+buyupgrade: Compre 30 dias por US $ 100
+
+# jobsRecent.html
+recentjobs: Empregos Recentes
+lastjobpost: última postagem sobre
+viewall: Ver todos
+
+# myjobs.html
+nojobpostedmessage: Você não postou nenhum trabalho.
+ifyouhaveanoffer: se você tem uma para oferecer
+
+# profiles.html
+viewalloption: Empresas & amp; Indivíduos
+viewcompanysonly: Apenas Empresas
+viewindividualsonly: Apenas Indivíduos
+search: procurar
+nomatchingprofiles: Desculpe não foram encontrados perfis correspondentes.
+
+#profilesRecente.html
+featuredprofiles: Desenvolvedores em destaque
+
+
+#forms placeholders and labels
+
+l_username: nome de usuário
+p_username: nome de usuário
+p_nome: Nome
+l_name: Digite seu nome
+p_type: Escolha o tipo
+l_type: individual ou empresa
+p_title: seu título
+l_title: insira seu título
+l_description: Descrição
+l_availability: Atualmente disponível para locação
+l_interested: Interessado em
+l_contact: Informações de Contato
+p_contact: email / twitter / qualquer coisa para você ser contatado em (o endereço de e-mail da sua conta de usuário não é exibido)
+l_personalurl: URL pessoal
+p_personalurl: https://www.abdulmeque.com
+l_githuburl: URL do GitHub
+p_githuburl: https://github.com/yourid
+l_linkedinurl: LinkedIn
+p_linkedinurl: https://www.linkedin/in/yourid
+p_resumeurl: URL do currículo / cv hospedado externamente (dropbox, gdrive, etc)
+l_resumeurl: retomar URL
+p_stackoverflowurl: StackOverflow
+l_stackoverflowurl: seu perfil público do stackoverflow
+l_fname: Nome Completo
+p_fname: Abdul Meque
+p_email: abdul@nmtss.net
+l_email: Endereço de E-Mail
+l_jdescription: Descrição do vaga
+p_jtitle: Cargo
+l_jtitle: Titulo da vaga
+l_company: Empresa
+p_company: Nome da empresa
+l_location: Localização
+p_location: localização da vaga
+l_url: URL
+p_url: URL externa para candidatar-se
+l_contactinfo: Contato
+p_contactinfo: email / twitter / qualquer coisa para você ser contatado em (o endereço de e-mail da sua conta de usuário não é exibido)
+l_remote: Esta é uma posição remota.
+l_userid: Id do usuário
+l_jobtype: Tipo de Vaga
+
+opt_type_individual: Individual
+opt_type_company: Empresa
+
+#Job Types 
+jt_full: Tempo Internio
+jt_ptime: Part Time 
+jt_hour: Por Hora
+jt_term: Contracto Determinado
+jt_mentoring: Mentoria
+jt_intern: Estagio
+jt_bounty: Recompensa
+jt_volunteer: Voluntariado
+jt_other: Outros

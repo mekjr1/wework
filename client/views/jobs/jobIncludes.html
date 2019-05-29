@@ -15,7 +15,7 @@
 <template name="jobStatusToggle">
     <div class="row">
         <div class="col-sm-12">
-            Current Status is <b>{{status}}</b> - Set status to
+            {{_"currentstatus" }} <b>{{status}}</b> - {{_"setstatus"}}
             {{#each statuses}}
                 {{#unless $eq ../status this}}
                     <button type="button" class="set-status">{{this}}</button>
@@ -27,7 +27,7 @@
 </template>
 <template name="jobAdminEditLink">
     <div class="pull-right">
-    	<a href="/admin/Jobs/{{_id}}/edit">Edit Job</a>
+    	<a href="/admin/Jobs/{{_id}}/edit">{{_"jobedit"}}</a>
     </div>
 </template>
 <template name="jobSuggestedTweet">
@@ -42,22 +42,23 @@
 <template name="jobStatusAlert">
     {{#if $eq status 'pending'}}
         <div class="alert alert-info">
-            <i class="fa fa-exclamation-triangle fa-2x pull-left"></i> This post is awaiting admin approval. It will be reviewed shortly and then become live on the site.
+            <i class="fa fa-exclamation-triangle fa-2x pull-left"></i>{{_"jobpendingmessage"}}
         </div>
     {{else}}
         {{#if $eq status 'flagged'}}
             <div class="alert alert-danger">
-                <i class="fa fa-flag fa-2x pull-left"></i> This post has been flagged for content. Contact an admin if you believe this is in error.
+                <i class="fa fa-flag fa-2x pull-left"></i> 
+                {{_"jobflaggedmessage"}}
             </div>
         {{else}}
             {{#if $eq status 'inactive'}}
                 <div class="alert alert-warning">
-                    <i class="fa fa-flag-checkered fa-2x pull-left"></i> This job post has been deactivated.
+                    <i class="fa fa-flag-checkered fa-2x pull-left"></i> {{_"jobdeactivatedmessage"}}
                 </div>
             {{else}}
                 {{#if $eq status 'filled'}}
                     <div class="alert alert-success">
-                        <i class="fa fa-trophy fa-2x pull-left"></i> This job post has been filled.
+                        <i class="fa fa-trophy fa-2x pull-left"></i> {{_"jobfilledmessage"}}
                     </div>
                 {{/if}}
             {{/if}}
@@ -71,17 +72,17 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="well">
-                            <h3 class="top-flush">Upgrade to a Featured Job Post</h3>
+                            <h3 class="top-flush">{{_"jobupgrademessage"}}</h3>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul>
-                                        <li>Guaranteed to stay on home page</li>
-                                        <li>Highlighted job listing display</li>
-                                        <li>Priority placement in jobs listing</li>
+                                        <li>{{_"guaranteedmessage"}}</li>
+                                        <li>{{_"highlightjobmessage"}}</li>
+                                        <li>{{_"priorityjobmessage"}}</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 text-center">
-                                    <a id="buy-featured" class="btn btn-primary btn-lg" role="button" href="#">Buy 30 Days for $100</a>
+                                    <a id="buy-featured" class="btn btn-primary btn-lg" role="button" href="#">{{_buyupgrade}}</a>
                                 </div>
                             </div>
                         </div>

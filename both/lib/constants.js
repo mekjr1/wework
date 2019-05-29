@@ -1,4 +1,6 @@
-JOB_TYPES = ["Full Time", "Part Time", "Hourly Contract", "Term Contract", "Mentoring", "Internship", "Bounty", "Open Source", "Volunteer", "Other"];
+//JOB_TYPES = ["Full Time", "Part Time", "Hourly Contract", "Term Contract", "Mentoring", "Internship", "Bounty", "Open Source", "Volunteer", "Other"];
+
+JOB_TYPES = [TAPi18n.__("jt_full"),TAPi18n.__("jt_ptime"),TAPi18n.__("jt_hour"), TAPi18n.__("jt_term"), TAPi18n.__("jt_mentoring"),TAPi18n.__("jt_intern"),TAPi18n.__("jt_bounty"), TAPi18n.__("jt_volunteer"), TAPi18n.__("jt_other")];
 
 SUMMERNOTE_OPTIONS = {
   type: 'summernote',

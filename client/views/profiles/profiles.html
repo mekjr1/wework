@@ -4,15 +4,15 @@
         <div class="col-md-3 col-md-offset-6 col-sm-6 text-right">
           <div class="form-group">
             <select id="type" class="form-control">
-              <option value="All">Companies &amp; Individuals</option>
-              <option value="Individual">Individuals Only</option>
-              <option value="Company">Companies Only</option>
+              <option value="All">{{_"viewalloption"}}</option>
+              <option value="Individual">{{_"viewindividualsonly"}}</option>
+              <option value="Company">{{_"viewcompaniesonly"}}</option>
             </select>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="form-group">
-            <input type="text" id="search" class="form-control" placeholder="Search" />
+            <input type="text" id="search" class="form-control" placeholder='{{_"search"}}' />
           </div>
         </div>
       {{!--
@@ -23,7 +23,7 @@
         {{>profileSmall}}
       {{else}}
         {{#if queryActive}}
-          Sorry no matching profiles found.
+          {{_"nomatchingprofiles"}}
         {{/if}}
       {{/each}}
     </div>

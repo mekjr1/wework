@@ -1,0 +1,23 @@
+<template name="SwitchLanguage">
+<!-- TWBS Dropdown button -->
+<div class="btn-group pull-right navbar-btn">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <img src="images/{languageTag}}.ico" style="width:16px;heigth:16px">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    {{#each languages}}
+    <li class="{{# if isCurrentLanguage}}active{{/if}}">
+      <a class="language-tag" data-lang="{{tag}}">
+             {{name}}
+             <!--  @TODO make it a helper -->
+             <img src="images/{{tag}}.ico" class="flag-img" style="width:16px;heigth:16px"> 
+             {{# if isCurrentLanguage }}
+              <span class="fa fa-check"> </span>
+             {{/ if }}
+         </a>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+</template>

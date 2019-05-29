@@ -3,9 +3,14 @@ Users = Meteor.users;
 UserProfileSchema = new SimpleSchema({
   name: {
     type: String,
-    label: "Full Name",
+    label: TAPi18n.__("l_fname"),
     max: 64,
-    optional: true
+    optional: true,
+    autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_fname")
+                }
+            }
   }
 });
 
@@ -16,18 +21,28 @@ UserSchema = new SimpleSchema({
   },
   username: {
     type: String,
-    optional: true
+    optional: true,
+    autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_username")
+                }
+            }
   },
   emails: {
     type: [Object],
     // this must be optional if you also use other login services like facebook,
     // but if you use only accounts-password, then it can be required
-    optional: true
+    optional: true,
+    autoform: {
+                afFieldInput: {
+                    placeholder: TAPi18n.__("p_email")
+                }
+            }
   },
   "emails.$.address": {
     type: String,
     regEx: SimpleSchema.RegEx.Email,
-    label: "Email Address"
+    label: TAPi18n.__("l_email")
   },
   "emails.$.verified": {
     type: Boolean,
