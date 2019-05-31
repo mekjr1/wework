@@ -23,7 +23,7 @@ Jobs.after.insert(function(userId, doc) {
   Email.send({
     to: getUserEmail(admin),
     from: FROM_EMAIL,
-    subject: "New Job Posted - " + doc.title,
-    text: "Job needs to be approved before it is live:\n\n" + Meteor.absoluteUrl("jobs/" + doc._id) + "\n\n\n\n\n\n"
+    subject: ()=>TAPi18n.__("new_job_alert") + doc.title,
+    text: ()=>TAPi18n.__("job_needs_approval_alert")+": \n\n" + Meteor.absoluteUrl("jobs/" + doc._id) + "\n\n\n\n\n\n"
   });
 });

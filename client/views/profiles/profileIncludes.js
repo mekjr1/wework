@@ -10,3 +10,10 @@ Template.profileStatusToggle.events({
     Meteor.call("adminSetProfileStatus", template.data._id, String(this));
   }
 });
+
+Template.profLabels.helpers({
+	'hasLabel': function() {
+    console.log(this);
+    return TAPi18n.__(this);
+  }
+})

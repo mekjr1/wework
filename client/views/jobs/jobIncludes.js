@@ -19,6 +19,20 @@ Template.jobStatusToggle.helpers({
     return STATUSES;
   }
 });
+Template.jobLabels.helpers({
+  'trans': function(str) {
+    if(str==='type'){
+      return TAPi18n.__(this.jobtype);
+    }
+    else{
+      return TAPi18n.__(str);
+    }
+
+    // console.log(str);
+    // console.log(this);
+    
+  }
+});
 
 Template.jobStatusToggle.events({
   "click .set-status": function(event, template) {
@@ -36,7 +50,7 @@ Template.jobFeatured.events({
     btn.button('loading');
     StripeCheckout.open({
       key: Meteor.settings.public.Stripe.pubKey,
-      name: 'We Work Meteor',
+      name: 'JObar',
       billingAddress: false,
       allowRememberMe: true,
       description: 'Featured Job Post - 30 Days',

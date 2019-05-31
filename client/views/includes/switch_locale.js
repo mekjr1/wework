@@ -1,11 +1,11 @@
 if (Meteor.isClient) {
 
   Meteor.startup(function () {
-    Session.set('i18-tag', 'pt');
+    Session.set('i18-tag', 'en');
     Session.setDefault('showLoadingIndicator', false);
   });
 
-  TAPi18n.setLanguage('pt')
+  TAPi18n.setLanguage('en')
     .done(function() {
       Session.set("showLoadingIndicator", false);
     })
@@ -43,6 +43,8 @@ if (Meteor.isClient) {
     var i18nTag = Session.get('i18nTag') || TAPi18n.getLanguages();
     if (TAPi18n.getLanguage() == i18nTag) {} else {
       TAPi18n.setLanguage(i18nTag);
+       console.log("language changed");
+       console.log(i18nTag);
     }
     return;
   };

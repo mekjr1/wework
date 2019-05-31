@@ -1,5 +1,5 @@
 {
-  "name": "wework",
+  "name": "Jobar",
   "version": "1.0.0",
   "description": "We Work Meteor, a job board and developer directory for Meteor specific work https://www.weworkmeteor.com",
   "main": "",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nate-strauser/wework.git"
+    "url": "git+https://github.com/mekjr1/wework.git"
   },
   "author": "Nathan Strauser",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nate-strauser/wework/issues"
+    "url": "https://github.com/mekjr1/wework/issues"
   },
-  "homepage": "https://github.com/nate-strauser/wework#readme",
+  "homepage": "https://github.com/mekjr1/wework#readme",
   "dependencies": {
     "@babel/runtime": "^7.4.4",
     "babel-runtime": "^6.26.0",

@@ -1,5 +1,5 @@
 # header.html
-brand: Encontre trabalhos em IT
+brand: Jobar
 login: Login
 registrar: Registrar
 myjobposts: Minhas vagas publicadas
@@ -10,13 +10,13 @@ logout: Sair
 
 # home.html
 tagline: O principal espaço para a equipe de trabalho e a comunidade de desenvolvedores especificamente para Techs
-browse: Navegue pelo
-jobcounts: Empregos disponiveis
+browse: Navegue pelas
+jobcounts: Vagas disponiveis
 or: ou
-createprofile: Crie seu Perfil
+createprofile: Criar Perfil
 tojoin: para se juntar ao
 registrado: mentes de tecnologia registradas
-postjob: Postar um emprego
+postjob: Postar uma vaga
 createprof: Criar um Perfil
 update: Atualizar
 cancel: Cancelar
@@ -65,7 +65,7 @@ jobposteditalert: Somente publicaçoes pendentes podem ser editados.
 backtojobpost: Voltar para a publicação
 selectjobtype: Selecione um tipo de vaga
 jobcompanyname: Nome da empresa contratante
-joblocation: Onde este trabalho está localizado?
+joblocation: Onde este vaga está localizada?
 jobdescription: informe os IT/desenvolvedores em potencial sobre essa posição. Qual é o projeto? O que você espera que eles saibam de antemão? Coisas assim.
 externalurl: URL externa do anúncio de emprego
 
@@ -75,10 +75,10 @@ setstatus: Definir status para
 jobedit: Editar vaga
 jobpendingmessage: esta postagem está aguardando aprovação do administrador. Ele será revisado em breve e depois será publicado no site.
 jobflaggedmessage: Esta postagem foi sinalizada por causa do conteúdo. Entre em contato com um administrador se você acredita que isso é um erro.
-jobdeactivatedmessage: Esta postagem de trabalho foi desativada.
+jobdeactivatedmessage: Esta postagem de vaga foi desativada.
 jobfilledmessage: Esta postagem de emprego foi preenchida.
 jobupgrademessage: Colocar a vaga em destaque
-GarantidaMessage: Garantido que ficara na pagina inicial
+guaranteedmessage: Garantido que ficara na pagina inicial
 highlightjobmessage: Exibição de listagem de vaga em Destaque
 priorityjobmessage: Posicionamento prioritário na listagem de empregos
 buyupgrade: Compre 30 dias por US $ 100
@@ -89,7 +89,7 @@ lastjobpost: última postagem sobre
 viewall: Ver todos
 
 # myjobs.html
-nojobpostedmessage: Você não postou nenhum trabalho.
+nojobpostedmessage: Você não postou nenhuma vaga.
 ifyouhaveanoffer: se você tem uma para oferecer
 
 # profiles.html
@@ -151,7 +151,7 @@ opt_type_individual: Individual
 opt_type_company: Empresa
 
 #Job Types 
-jt_full: Tempo Internio
+jt_full: Tempo Inteiro
 jt_ptime: Part Time 
 jt_hour: Por Hora
 jt_term: Contracto Determinado
@@ -161,16 +161,30 @@ jt_bounty: Recompensa
 jt_volunteer: Voluntariado
 jt_other: Outros
 
-# schemas:
-#   Schemaj:
-#     title:
-#       label: Titulo
-#       placeholder: Enter a title for your post
-#     category:
-#       label: Category
-#       placeholder: Select a category
-#       options:
-#         announcements: Announcements
-#         packages: Packages
-#         ama: AMA
-#         news: News
+Full Time : Tempo Inteiro
+Part Time: Part Time
+Hourly Contract: Contrato Por Hora
+Term Contract: Contrato Determinado
+Mentoring: Mentoria
+Internship: Estagio
+Bounty: Recompensa
+Open Source: Open Source
+Volunteer: Voluntariado
+Other: Outros
+
+new_job_altert: Nova vaga publicada -
+job_needs_approval_alert: A Vaga precisa ser aprovada antes de ser publicada
+
+home_page_title:  Jobar - Quadro de empregos e lista de desenvolvedores
+editprof_page_title: Jobar - Editar meu perfil de desenvolvedor
+newprof_page_title: Jobar - Criar Perfil do Desenvolvedor
+allprof_page_title: Jobar - Todos os desenvolvedores
+editjob_page_title: Jobar - Edit Job Post
+newjob_page_title: Jobar - postar um emprego
+myjobs_page_title: Jobar - Minhas Vagas
+alljob_page_title: Jobar - Todas as Vagas
+
+remote: remoto
+featured: Destacado
+
+job_expired: O Anúncio de Vaga expirou

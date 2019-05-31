@@ -1,5 +1,6 @@
 AdminConfig = {
-  name: 'We Work Meteor',
+  name: 'Jobar',
+  adminEmails: ['gafar_meque2@hotmail.com'],
   collections: {
     Jobs: {
       icon: 'briefcase',

@@ -1,14 +1,14 @@
 Users = Meteor.users;
-
+Meteor.startup(function() {
 UserProfileSchema = new SimpleSchema({
   name: {
     type: String,
-    label: TAPi18n.__("l_fname"),
+    label: ()=>TAPi18n.__("l_fname"),
     max: 64,
     optional: true,
     autoform: {
                 afFieldInput: {
-                    placeholder: TAPi18n.__("p_fname")
+                    placeholder: ()=>TAPi18n.__("p_fname")
                 }
             }
   }
@@ -24,7 +24,7 @@ UserSchema = new SimpleSchema({
     optional: true,
     autoform: {
                 afFieldInput: {
-                    placeholder: TAPi18n.__("p_username")
+                    placeholder: ()=>TAPi18n.__("p_username")
                 }
             }
   },
@@ -35,14 +35,14 @@ UserSchema = new SimpleSchema({
     optional: true,
     autoform: {
                 afFieldInput: {
-                    placeholder: TAPi18n.__("p_email")
+                    placeholder: ()=>TAPi18n.__("p_email")
                 }
             }
   },
   "emails.$.address": {
     type: String,
     regEx: SimpleSchema.RegEx.Email,
-    label: TAPi18n.__("l_email")
+    label: ()=>TAPi18n.__("l_email")
   },
   "emails.$.verified": {
     type: Boolean,
@@ -95,4 +95,5 @@ Users.allow({
     return false;
   },
   fetch: ['userId']
+});
 });
